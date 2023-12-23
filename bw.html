@@ -11,12 +11,8 @@
 const isDark = window.matchMedia("(prefers-color-scheme:dark)").matches
 
   if (isDark) {
-    <style type = "text/css">
-      body {
-        background-color:black;
-        color:white;
-      }
-    </style>
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
   }
   const lightTheme = {
     backgroundColor : "white",
